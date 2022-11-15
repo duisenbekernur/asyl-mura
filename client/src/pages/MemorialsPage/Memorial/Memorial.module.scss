@@ -1,0 +1,56 @@
+.memorials {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 1000px;
+  gap: 25px;
+
+  div {
+    text-align: center;
+    cursor: pointer;
+    width: 1000px;
+    padding: 30px;
+    background-color: #5b5643;
+    border-radius: 25px;
+    color: #fff;
+    font-size: 22px;
+    transition: 0.2s all;
+
+    h3 {
+      font-weight: 400;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    div {
+      padding: 20px;
+      width: 700px;
+    }
+  }
+
+  @media screen and (max-width: 870px) {
+    div {
+      padding: 15px;
+      width: 500px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    div {
+      padding: 15px;
+      width: 400px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    div {
+      padding: 15px;
+      width: 350px;
+    }
+  }
+}

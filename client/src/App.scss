@@ -1,0 +1,21 @@
+@import url("./scss/_all.scss");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  background-color: rgb(219, 212, 116);
+}
+
+.App {
+  margin: 0 auto;
+  min-height: 70vh;
+}

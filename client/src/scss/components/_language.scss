@@ -1,0 +1,40 @@
+.language {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 25px;
+  li {
+    list-style: none;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .activ {
+    background-color: rgb(32, 25, 25);
+    color: #fff;
+  }
+}
+
+.back {
+  width: 30px;
+  height: 30px;
+  background-color: rgb(32, 25, 25);
+  border-radius: 5px;
+  position: absolute;
+  left: 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.back-language-container {
+  margin-top: -20px;
+  position: relative;
+  width: 1141px;
+  display: flex;
+  align-items: center;
+}

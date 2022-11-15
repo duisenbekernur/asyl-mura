@@ -1,0 +1,11 @@
+.about {
+  margin: 0 auto;
+  li {
+    width: 800px;
+  }
+  @media screen and (max-width: 1300px) {
+    li {
+      width: 500px;
+    }
+  }
+}

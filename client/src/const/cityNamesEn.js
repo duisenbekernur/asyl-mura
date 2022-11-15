@@ -1,0 +1,17 @@
+export default [
+  "astana",
+  "almaty",
+  "shymkent",
+  "aqtobe",
+  "atyrau",
+  "batys-kaz",
+  "zhambyl",
+  "karagandy",
+  "qostanai",
+  "qyzylorda",
+  "mangistau",
+  "pavlodar",
+  "soltustik-kaz",
+  "turkistan",
+  "shygys-kaz",
+];
