@@ -25,7 +25,7 @@
 
   ul {
     width: 800px;
-    margin: 0 auto 50px;
+    margin: 0 auto 25px;
     li {
       font-size: 23px;
       text-align: left;
@@ -57,6 +57,14 @@
       font-size: 50px;
     }
   }
+  @media screen and (max-width: 650px) {
+    h1 {
+      font-size: 25px;
+    }
+    ul {
+      width: 350px;
+    }
+  }
 
   @media screen and (max-width: 1280px) {
     ul {
@@ -78,7 +86,10 @@
   @media screen and (max-width: 800px) {
     ul {
       width: 300px;
-      font-size: 15px;
+
+      li {
+        font-size: 15px;
+      }
     }
   }
 
