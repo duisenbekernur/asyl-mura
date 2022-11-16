@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import s from "./Panel.module.scss";
 import cityNamesKaz from "../../../const/cityNamesKaz";
@@ -35,6 +37,8 @@ const AddPost = () => {
     };
 
     await axios.post("http://127.0.0.1:8000/mura/", mura);
+
+    toast("Артикль успешно добавлен!");
   };
 
   return (
@@ -126,6 +130,7 @@ const AddPost = () => {
         </div>
 
         <button>Сохранить</button>
+        <ToastContainer />
       </form>
     </div>
   );

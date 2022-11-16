@@ -1,6 +1,8 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import s from "./Login.module.scss";
 
@@ -19,7 +21,7 @@ const Index = ({ setIsAuth }) => {
       }
     }
 
-    alert("Ошибка данных!!!");
+    toast("Ошибка данных!!!");
   };
 
   return (
@@ -44,6 +46,18 @@ const Index = ({ setIsAuth }) => {
         {errors.password && <span>{errors.password.message}</span>}
 
         <button type="submit">ВОЙТИ</button>
+        <ToastContainer
+          position="top-right"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
       </form>
     </div>
   );
